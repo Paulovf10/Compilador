@@ -27,3 +27,47 @@ Paulo Victor Fernandes Sousa
 - O programa retorna os erros caso existam.
 - Um dicionario contendo todos os tokens e seus valores.
   
+# Tokens
+tipos = ['char', 'int', 'const', 'double', 'float', 'void', 'long', 'short', 'main']
+tipos_declara = ['%d', '%s']
+condicionais = ['if', 'else']
+repeticoes = ['for', 'while', 'do']
+interacao = ['break', 'continue', 'return', 'goto']
+funcoes = ['printf', '++', '--', '#include']
+bibliotecas = ['<stdio.h>', '<conio.h>']
+delimitador_inicio = ['(', '[', '{']
+delimitador_fim = [')', ']', '}', ',']
+operadores_aritimetico = ['-', '+', '/', '*']
+operadores_logico = ['&&', '||', '!']
+operadores_relacional = ['<', '>', '<=', '>=', '==', '!=']
+operadores_relacional2 = ['++', '--']
+jump = ['\n']
+numeros = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+
+# Entrada
+#include <stdio.h>
+#include <conio.h>
+int main ( void ) {
+  int = 2 ;
+
+  for ( i = 1 ; i <= 9 ; i++ ) {
+    printf ( " Aprendendo Linguagem C \n " ) ;
+  }
+
+  getch ( ) ;
+  return ( 0 ) ;
+}
+
+# Saida
+[{'Palavra reservada - Função': '#include'}, {'Palavra reservada - Biblioteca': '<stdio.h>'}]
+[{'Palavra reservada - Função': '#include'}, {'Palavra reservada - Biblioteca': '<conio.h>'}]
+[{'Palavra reservada - Tipo': 'int'}, {'Palavra reservada - Tipo': 'main'}, {'Delimitador - Inicio': '('}, {'Palavra reservada - Tipo': 'void'}, {'Delimitador - Fim': ')'}, {'Delimitador - Inicio': '{'}]
+[{'Palavra reservada - Tipo': 'int'}, {'Operador atribuição': '='}, {'Numero': '2'}, {'Separador': ';'}]
+[]
+[{'Palavra reservada - Repetição': 'for'}, {'Delimitador - Inicio': '('}, {'Indetificador': 'i'}, {'Operador atribuição': '='}, {'Numero': '1'}, {'Separador': ';'}, {'Indetificador': 'i'}, {'Operador relacional': '<='}, {'Numero': '9'}, {'Separador': ';'}, {'Indetificador': 'i++'}, {'Delimitador - Fim': ')'}, {'Delimitador - Inicio': '{'}]
+[{'Palavra reservada - Função': 'printf'}, {'Delimitador - Inicio': '('}, {'String': '"'}, {'Indetificador': 'Aprendendo'}, {'Indetificador': 'Linguagem'}, {'Indetificador': 'C'}, {'Indetificador': '\\n'}, {'String': '"'}, {'Delimitador - Fim': ')'}, {'Separador': ';'}]
+[{'Delimitador - Fim': '}'}]
+[]
+[{'Indetificador': 'getch'}, {'Delimitador - Inicio': '('}, {'Delimitador - Fim': ')'}, {'Separador': ';'}]
+[{'Palavra reservada - Interação': 'return'}, {'Delimitador - Inicio': '('}, {'Numero': '0'}, {'Delimitador - Fim': ')'}, {'Separador': ';'}]
+[{'Delimitador - Fim': '}'}]
