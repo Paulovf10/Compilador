@@ -23,4 +23,7 @@ Paulo Victor Fernandes Sousa
   1) A main onde a entrada é trasformada em token e feita as checagens.
   2) A classe estados onde é feita a verificação dos estados possiveis de cada token.
 
-
+# Execução
+- O programa retorna os erros caso existam.
+- Um dicionario contendo todos os tokens e seus valores.
+  
